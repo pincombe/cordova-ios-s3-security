@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "name": "pincombe.cordova.ios-s3-security",
+    "cordova_name": "cordova-ios-s3-security",
+    "description": "Cordova plugin to exclude S3 from App Transport Security (iOS9)",
+    "license": "MIT",
+    "repo": "https://github.com/pincombe/cordova-ios-s3-security.git",
+    "keywords": [
+        "cordova",
+        "device",
+        "ats",
+        "security"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
