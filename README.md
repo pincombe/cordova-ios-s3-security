@@ -7,16 +7,16 @@ Cordova plugin to exclude S3 from App Transport Security (iOS9)
 
 It will add the following part to the `*-Info.plist` file during build process:
 
-  <key>NSAppTransportSecurity</key> 
-  <dict> 
-    <key>NSExceptionDomains</key> 
+    <key>NSAppTransportSecurity</key> 
     <dict> 
-      <key>s3.amazonaws.com</key> 
+      <key>NSExceptionDomains</key> 
       <dict> 
-        <key>NSExceptionRequiresForwardSecrecy</key> 
+        <key>s3.amazonaws.com</key> 
+        <dict> 
+          <key>NSExceptionRequiresForwardSecrecy</key> 
           <false/> 
           <key>NSIncludesSubdomains</key> 
           <true/> 
+        </dict> 
       </dict> 
-    </dict> 
-  </dict>
+    </dict>
