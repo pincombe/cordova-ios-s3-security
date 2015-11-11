@@ -11,19 +11,18 @@
 
     <platform name="ios">
         <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
-          <key>NSAppTransportSecurity</key> 
-            <dict> 
-              <key>NSExceptionDomains</key> 
-              <dict> 
-                <key>s3.amazonaws.com</key> 
-                <dict> 
-                  <key>NSExceptionRequiresForwardSecrecy</key> 
-                  <false/> 
-                  <key>NSIncludesSubdomains</key> 
-                  <true/> 
-                </dict> 
-              </dict> 
-            </dict>
+          <dict>
+	    <key>NSExceptionDomains</key>
+	    <dict>
+              <key>s3.amazonaws.com</key>
+	      <dict>
+	        <key>NSIncludesSubdomains</key>
+	        <true/>
+	        <key>NSExceptionRequiresForwardSecrecy</key>
+	        <false/>
+	      </dict>
+	    </dict>
+	  </dict>
         </config-file>
     </platform>
 
