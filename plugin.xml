@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="pincombe.cordova.ios-s3-security"
+        version="1.0.0">
+    <name>cordova-ios-s3-security</name>
+    <description>IOS Security</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,device,ats,security</keywords>
+    <repo>https://github.com/robertklein/cordova-ios-s3-security.git</repo>
+
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+          <key>NSAppTransportSecurity</key> 
+            <dict> 
+              <key>NSExceptionDomains</key> 
+              <dict> 
+                <key>s3.amazonaws.com</key> 
+                <dict> 
+                  <key>NSExceptionRequiresForwardSecrecy</key> 
+                  <false/> 
+                  <key>NSIncludesSubdomains</key> 
+                  <true/> 
+                </dict> 
+              </dict> 
+            </dict>
+        </config-file>
+    </platform>
+
+</plugin>
